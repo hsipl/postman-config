@@ -14,12 +14,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/store",
-							"protocol": "http",
+							"raw": "{{env}}/api/store",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"store"
@@ -43,12 +41,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/store",
-							"protocol": "http",
+							"raw": "{{env}}/api/store",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"store"
@@ -85,20 +81,13 @@
 									"type": "file",
 									"src": "/E:/地圖/97_210_png/94201089_097_Mask.png"
 								}
-							],
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/store/1",
-							"protocol": "http",
+							"raw": "{{env}}/api/store/1",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"store",
@@ -114,12 +103,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/store/1",
-							"protocol": "http",
+							"raw": "{{env}}/api/store/1",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"store",
@@ -143,16 +130,14 @@
 						"method": "GET",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": ""
+							"mode": "formdata",
+							"formdata": []
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/product",
-							"protocol": "http",
+							"raw": "{{env}}/api/product",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"product"
@@ -167,21 +152,55 @@
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"鹽酥雞1\",\r\n    \"price\": 50,\r\n    \"category\": 2,\r\n    \"status\": 0,\r\n    \"storeId\":1,\r\n    \"tags\": [1]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "雞排",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "60",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "storeId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tags[0]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tags[1]",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/地圖/96_5_png/95213016_096_Mask.png"
 								}
-							}
+							]
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/product",
-							"protocol": "http",
+							"raw": "{{env}}/api/product",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"product"
@@ -211,12 +230,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/product/1",
-							"protocol": "http",
+							"raw": "{{env}}/api/product/1",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"product",
@@ -232,12 +249,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/product/88",
-							"protocol": "http",
+							"raw": "{{env}}/api/product/88",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"product",
@@ -258,12 +273,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/handover",
-							"protocol": "http",
+							"raw": "{{env}}/api/handover",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"handover"
@@ -287,12 +300,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/handover",
-							"protocol": "http",
+							"raw": "{{env}}/api/handover",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"handover"
@@ -316,12 +327,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/handover/1",
-							"protocol": "http",
+							"raw": "{{env}}/api/handover/1",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"handover",
@@ -337,12 +346,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/handover/1",
-							"protocol": "http",
+							"raw": "{{env}}/api/handover/1",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"handover",
@@ -363,16 +370,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/order/6",
-							"protocol": "http",
+							"raw": "{{env}}/api/order",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
-								"order",
-								"6"
+								"order"
 							]
 						}
 					},
@@ -385,7 +389,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"status\": 0,\r\n    \"storeId\": 1,\r\n    \"pay\": 0,\r\n    \"products\": [\r\n        {\r\n            \"id\": 2,\r\n            \"description\": \"胡椒粉\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"status\": 0,\r\n    \"storeId\": 1,\r\n    \"pay\": 0,\r\n    \"products\": [\r\n        {\r\n            \"productId\": 1,\r\n            \"description\": \"胡椒粉\"\r\n        },\r\n        {\r\n            \"productId\": 1,\r\n            \"description\": \"胡椒粉2\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -393,12 +397,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/order",
-							"protocol": "http",
+							"raw": "{{env}}/api/order",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"order"
@@ -414,7 +416,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"status\": 0,\r\n    \"storeId\": 1,\r\n    \"pay\": 0,\r\n    \"products\": [\r\n        {\r\n            \"id\":1,\r\n            \"description\":\"123\"\r\n        },\r\n        {\r\n            \"id\":1,\r\n            \"description\":\"test2\"\r\n        }\r\n    ]\r\n}",
+							"raw": " {\r\n        \"storeId\": 1,\r\n        \"pay\": 1,\r\n        \"status\": 0,\r\n        \"products\": [\r\n            {\r\n                \"productId\": 1,\r\n                \"description\": \"胡椒粉2\"\r\n            },{\r\n                \"productId\": 1,\r\n                \"description\": \"胡椒粉2\"\r\n            }\r\n        ]\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -422,12 +424,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/order/6",
-							"protocol": "http",
+							"raw": "{{env}}/api/order/6",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"order",
@@ -443,16 +443,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/order/8",
-							"protocol": "http",
+							"raw": "{{env}}/api/order/",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"order",
-								"8"
+								""
 							]
 						}
 					},
@@ -469,12 +467,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/tag",
-							"protocol": "http",
+							"raw": "{{env}}/api/tag",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"tag"
@@ -490,7 +486,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"tag\": \"七位粉2\",\r\n    \"status\": 0\r\n}",
+							"raw": "{\r\n    \"tag\": \"七位粉3\",\r\n    \"status\": 0\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -498,12 +494,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/tag",
-							"protocol": "http",
+							"raw": "{{env}}/api/tag",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"tag"
@@ -527,12 +521,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/tag/1",
-							"protocol": "http",
+							"raw": "{{env}}/api/tag/1",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"tag",
@@ -548,12 +540,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/tag/2",
-							"protocol": "http",
+							"raw": "{{env}}/api/tag/2",
 							"host": [
-								"localhost"
+								"{{env}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"tag",
@@ -566,37 +556,142 @@
 			]
 		},
 		{
-			"name": "login",
-			"request": {
-				"auth": {
-					"type": "basic"
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"hsipl206\",\r\n    \"password\":\"hsipl206\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "user",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "basic"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"hsipl206\",\r\n    \"password\":\"hsipl206\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{env}}/api/user/login",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8000/api/user/login",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"user",
-						"login"
-					]
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{env}}/api/user/logout",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{env}}/api/user/employee",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "kcykcytest",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "hsipl206123",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "kcykcytest",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "storeId",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/地圖/96_5_png/95213016_096_Mask.png"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{env}}/api/user/register",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
